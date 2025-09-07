@@ -62,7 +62,7 @@ const Navbar = () => {
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-coffee-800 hover:bg-gray-200 dark:hover:bg-coffee-700 transition-colors duration-200"
+              className="p-2 rounded-lg bg-coffee-100 dark:bg-coffee-800 hover:bg-coffee-200 dark:hover:bg-coffee-700 transition-all duration-200 shadow-lg shadow-coffee-200/50 hover:shadow-xl hover:shadow-coffee-300/60"
               aria-label="Toggle theme"
             >
               {isDark ? (
@@ -70,7 +70,7 @@ const Navbar = () => {
                   <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" />
                 </svg>
               ) : (
-                <svg className="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-5 h-5 text-coffee-700" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
                 </svg>
               )}
@@ -79,7 +79,7 @@ const Navbar = () => {
             {/* CTA Button */}
             <button
               onClick={handleJoinCommunity}
-              className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+              className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-xl shadow-amber-500/40 hover:shadow-2xl hover:shadow-amber-600/50"
             >
               Join Community
             </button>
@@ -89,7 +89,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center space-x-2">
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-coffee-800 hover:bg-gray-200 dark:hover:bg-coffee-700 transition-colors duration-200"
+              className="p-2 rounded-lg bg-coffee-100 dark:bg-coffee-800 hover:bg-coffee-200 dark:hover:bg-coffee-700 transition-all duration-200 shadow-lg shadow-coffee-200/50"
               aria-label="Toggle theme"
             >
               {isDark ? (
@@ -97,7 +97,7 @@ const Navbar = () => {
                   <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" />
                 </svg>
               ) : (
-                <svg className="w-4 h-4 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 text-coffee-700" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
                 </svg>
               )}
@@ -105,9 +105,9 @@ const Navbar = () => {
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-coffee-800 hover:bg-gray-200 dark:hover:bg-coffee-700 transition-colors duration-200"
+              className="p-2 rounded-lg bg-coffee-100 dark:bg-coffee-800 hover:bg-coffee-200 dark:hover:bg-coffee-700 transition-all duration-200 shadow-lg shadow-coffee-200/50"
             >
-              <svg className="w-6 h-6 text-gray-700 dark:text-cream-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6 text-coffee-700 dark:text-cream-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {isMobileMenuOpen ? (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 ) : (
@@ -120,13 +120,13 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 backdrop-blur-xl bg-white/95 dark:bg-obsidian-900/95 border-b border-gray-200/30 dark:border-midnight-600/50 shadow-lg">
+          <div className="md:hidden absolute top-full left-0 right-0 backdrop-blur-xl bg-cream-50/95 dark:bg-obsidian-900/95 border-b border-coffee-200/30 dark:border-midnight-600/50 shadow-2xl shadow-coffee-500/20">
             <div className="px-4 py-6 space-y-4">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block text-gray-700 dark:text-cream-300 hover:text-blue-600 dark:hover:text-amber-400 font-medium transition-colors duration-200 py-2"
+                  className="block text-coffee-700 dark:text-cream-300 hover:text-amber-600 dark:hover:text-amber-400 font-medium transition-all duration-200 py-2 hover:drop-shadow-lg"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}
@@ -137,7 +137,7 @@ const Navbar = () => {
                   handleJoinCommunity();
                   setIsMobileMenuOpen(false);
                 }}
-                className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 mt-4"
+                className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 mt-4 shadow-xl shadow-amber-500/40"
               >
                 Join Community
               </button>

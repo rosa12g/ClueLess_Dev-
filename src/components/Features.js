@@ -41,14 +41,14 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white dark:from-midnight-800 dark:to-obsidian-900">
+    <section className="py-16 md:py-24 bg-gradient-to-b from-cream-100 to-cream-50 dark:from-midnight-800 dark:to-obsidian-900">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 dark:text-cream-100 font-poppins mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-coffee-800 dark:text-cream-100 font-poppins mb-6 drop-shadow-lg">
             App Features
           </h2>
-          <p className="text-lg md:text-xl text-gray-600 dark:text-cream-200 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-coffee-600 dark:text-cream-200 max-w-3xl mx-auto">
             Everything you need to master Flutter development and connect with a thriving community
           </p>
         </div>
@@ -58,10 +58,10 @@ const Features = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group bg-white dark:bg-midnight-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer border border-gray-100 dark:border-midnight-600"
+              className="group bg-white dark:bg-midnight-800 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 cursor-pointer border border-gray-100 dark:border-midnight-600"
             >
               {/* Icon */}
-              <div className={`w-16 h-16 bg-gradient-to-r ${feature.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+              <div className={`w-16 h-16 bg-gradient-to-r ${feature.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                 <span className="text-2xl">{feature.icon}</span>
               </div>
               

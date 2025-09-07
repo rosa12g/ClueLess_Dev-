@@ -22,7 +22,7 @@ const Hero = () => {
       </div>
       
       <div className="container mx-auto max-w-6xl relative z-10">
-        <div className="backdrop-blur-xl bg-white/95 dark:bg-obsidian-800/90 rounded-3xl p-8 md:p-12 lg:p-16 text-center shadow-2xl border border-white/50 dark:border-midnight-600/50 animate-fade-in">
+        <div className="backdrop-blur-xl bg-cream-50/90 dark:bg-obsidian-800/90 rounded-3xl p-8 md:p-12 lg:p-16 text-center shadow-2xl shadow-coffee-500/20 border-2 border-coffee-300/60 dark:border-midnight-600/50 animate-fade-in hover:shadow-3xl hover:shadow-coffee-600/30 hover:border-coffee-400/70 transition-all duration-500">
           {/* Logo */}
           <div className="mb-8">
             <Logo />
@@ -38,15 +38,15 @@ const Hero = () => {
             Learn Flutter, Share Projects, Grow Together
           </p>
           
-          {/* Enhanced Feature Pills */}
+          {/* Modern Feature Pills */}
           <div className="flex flex-wrap justify-center gap-3 mb-12 animate-slide-up">
-            <span className="px-5 py-3 bg-gradient-to-r from-amber-50 to-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-200 rounded-full text-sm font-medium shadow-lg border border-amber-200/50 dark:border-amber-800/30">
+            <span className="px-4 py-2 bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-200 rounded-full text-sm font-medium border border-amber-200/30 dark:border-amber-800/30 hover:bg-amber-100 dark:hover:bg-amber-900/40 transition-all duration-300">
               Daily Tips
             </span>
-            <span className="px-5 py-3 bg-gradient-to-r from-blue-50 to-blue-100 dark:bg-coffee-900/30 text-blue-700 dark:text-coffee-200 rounded-full text-sm font-medium shadow-lg border border-blue-200/50 dark:border-coffee-800/30">
+            <span className="px-4 py-2 bg-blue-50 dark:bg-coffee-900/30 text-blue-700 dark:text-coffee-200 rounded-full text-sm font-medium border border-blue-200/30 dark:border-coffee-800/30 hover:bg-blue-100 dark:hover:bg-coffee-900/40 transition-all duration-300">
               Community Driven
             </span>
-            <span className="px-5 py-3 bg-gradient-to-r from-purple-50 to-purple-100 dark:bg-orange-900/30 text-purple-700 dark:text-orange-200 rounded-full text-sm font-medium shadow-lg border border-purple-200/50 dark:border-orange-800/30">
+            <span className="px-4 py-2 bg-purple-50 dark:bg-orange-900/30 text-purple-700 dark:text-orange-200 rounded-full text-sm font-medium border border-purple-200/30 dark:border-orange-800/30 hover:bg-purple-100 dark:hover:bg-orange-900/40 transition-all duration-300">
               Project Based
             </span>
           </div>
@@ -55,7 +55,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
             <button
               onClick={handleJoinCommunity}
-              className="group bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-semibold text-lg md:text-xl px-8 md:px-12 py-4 md:py-5 rounded-full shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105 active:scale-95 focus:outline-none focus:ring-4 focus:ring-amber-500 focus:ring-opacity-50 animate-glow"
+              className="group bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-semibold text-lg md:text-xl px-8 md:px-12 py-4 md:py-5 rounded-full shadow-md transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-105 active:scale-95 focus:outline-none focus:ring-4 focus:ring-amber-500 focus:ring-opacity-50"
             >
               <span className="flex items-center gap-2">
                 Join Our Community
@@ -67,7 +67,7 @@ const Hero = () => {
             
             <button
               onClick={handleDownloadApp}
-              className="bg-white dark:bg-midnight-800 text-gray-700 dark:text-cream-200 border-2 border-gray-200 dark:border-midnight-600 hover:bg-gray-50 dark:hover:bg-midnight-700 font-semibold text-lg md:text-xl px-8 md:px-12 py-4 md:py-5 rounded-full shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105 active:scale-95 focus:outline-none focus:ring-4 focus:ring-gray-300 focus:ring-opacity-50"
+              className="bg-white dark:bg-midnight-800 text-gray-700 dark:text-cream-200 border-2 border-gray-200 dark:border-midnight-600 hover:bg-gray-50 dark:hover:bg-midnight-700 font-semibold text-lg md:text-xl px-8 md:px-12 py-4 md:py-5 rounded-full shadow-md transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-105 active:scale-95 focus:outline-none focus:ring-4 focus:ring-gray-300 focus:ring-opacity-50"
             >
               Download App
             </button>
